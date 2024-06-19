@@ -22,8 +22,7 @@ This project aims to analyze the causal effect of a new personalization feature 
 ### Methodology
 1. **Simulating Dataset:**
    - Simulate a dataset including relevant variables: PersonalizedRecommendation, HoursOfContentConsumed, UserEngagementLevel, PreferredContentType, NewFeatureExposure.
-   
-   ![Variable Table](Pasted Graphic 4.png)
+![Variable Table](Pasted Graphic 4.png)
    
 2. **Initializing a Causal Model:**
    - Create a causal graph using the DoWhy library to specify the treatment, outcome, and graph.
