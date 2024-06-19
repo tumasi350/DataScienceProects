@@ -1,4 +1,4 @@
-# Music App Causal Inference Personalization
+# Music App  Personalization Causal Inference
 
 ## Table of Contents
 - [Project Overview](#project-overview)
