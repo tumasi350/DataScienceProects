@@ -1,14 +1,8 @@
-Got it. Here's the updated README file following your specified structure:
-
----
-
 # AZ Watch Subscriber Segmentation
 
 ## Project Overview
 
-AZ Watch is a popular video streaming platform dedicated to educational content, where creators share tutorials and lessons on various topics, including language learning, cooking, and playing musical instruments.
-
-In this project, we performed clustering to segment AZ Watch subscribers based on their numerical data. This analysis aimed to establish more personalized and targeted campaigns to reduce subscriber churn.
+In this project, we performed clustering to segment AZ Watch (video streaming platform) subscribers based on their numerical data (simulated). This analysis aimed to establish more personalized and targeted campaigns to reduce subscriber churn.
 
 ## Table of Contents
 
