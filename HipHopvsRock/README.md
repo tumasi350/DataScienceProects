@@ -14,16 +14,15 @@
 - [Conclusion](#conclusion)
 
 ## Project Overview
-This project aims to classify music tracks as either Hip-Hop or Rock using machine learning techniques. The project involves preprocessing and balancing the dataset, applying Principal Component Analysis (PCA) for dimensionality reduction, and using decision tree and logistic regression models to classify the tracks. Model performance is evaluated using cross-validation.
+Created a machine learning model to classify music tracks as either Hip-Hop or Rock, achieving an accuracy of 82% using logistic regression. The project involved preprocessing and balancing the dataset, applying PCA for dimensionality reduction, and using decision tree and logistic regression models to classify the tracks, with model performance evaluated using cross-validation.
 
 ## Data Sources
 - **Echo Nest Data**: Contains various audio features for the tracks.
 - **FMA Dataset**: Metadata for the tracks used for genre classification.
 
 ## Tools and Libraries
-- **Python Version**: 3.7
-- **Libraries**: pandas, numpy, sklearn, matplotlib, seaborn, etc.
-- **For Web Framework Requirements**: `pip install -r requirements.txt`
+- **Python Version:** 3.9  
+- **Libraries:** pandas, numpy, sklearn.model_selection (train_test_split, KFold, cross_val_score), sklearn.preprocessing (StandardScaler), matplotlib.pyplot, sklearn.decomposition (PCA), sklearn.linear_model (LogisticRegression), sklearn.metrics (classification_report), sklearn.tree (DecisionTreeClassifier), sklearn.pipeline (Pipeline)  
 
 ## Data Cleaning and Preparation
 - **Data Merging**: Merged Echo Nest metrics with track metadata using track IDs.
