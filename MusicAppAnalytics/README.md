@@ -23,7 +23,7 @@ This project aims to analyze the causal effect of a new personalization feature 
 1. **Simulating Dataset:**
    - Simulate a dataset including relevant variables: PersonalizedRecommendation, HoursOfContentConsumed, UserEngagementLevel, PreferredContentType, NewFeatureExposure.
    
-   ![Variable Table](MusicAppAnalytics/Pasted Graphic 4.png)
+   ![Variable Table](Pasted Graphic 4.png)
    
 2. **Initializing a Causal Model:**
    - Create a causal graph using the DoWhy library to specify the treatment, outcome, and graph.
@@ -40,7 +40,7 @@ This project aims to analyze the causal effect of a new personalization feature 
 6. **Stress Testing / Sensitivity Analysis:**
    - Conduct sensitivity analysis to check the robustness of the causal effect estimate to unobserved confounders.
    
-   ![Effect of Unobserved Common Cause](MusicAppAnalytics/Effect of Unobserved Common Cause.png)
+   ![Effect of Unobserved Common Cause](Effect of Unobserved Common Cause.png)
 
 7. **Alternative Causal Strategies:**
    - Explore the use of instrumental variables to estimate the causal effect as a robustness check.
