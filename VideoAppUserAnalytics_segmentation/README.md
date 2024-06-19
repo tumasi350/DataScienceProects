@@ -53,7 +53,7 @@ In this project, we performed clustering to segment AZ Watch subscribers based o
 
 - **Elbow Method**: Applied the elbow method to determine the optimal number of clusters.
 - **K-Means Clustering**: Performed K-Means clustering with the optimal number of clusters (3).
-pictureeeeee
+  ![Elbow Method for K Selection](elbow_chart.png)
 
 ## Results
 
