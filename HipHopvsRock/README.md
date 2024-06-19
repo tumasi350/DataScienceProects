@@ -43,6 +43,8 @@ In the initial data preparation phase, the following tasks were performed:
 EDA involved exploring the music data to answer key questions, such as:
 - What are the distributions of different features?
 - Are there any strong correlations between the features?
+![Correlation Matrix](heatmap.png)
+
 
 ## Model Building
 
