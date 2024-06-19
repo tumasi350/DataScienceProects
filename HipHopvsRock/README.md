@@ -1,58 +1,73 @@
 # Classifying Music Genres Using Echo Nest Data
 
+## Project Overview
+
+Created a machine learning model to classify music tracks as either Hip-Hop or Rock, achieving an accuracy of 82% using logistic regression. The project involved preprocessing and balancing the dataset, applying PCA for dimensionality reduction, and using decision tree and logistic regression models to classify the tracks, with model performance evaluated using cross-validation.
+
 ## Table of Contents
+
 - [Project Overview](#project-overview)
 - [Data Sources](#data-sources)
 - [Tools and Libraries](#tools-and-libraries)
-- [Data Cleaning and Preparation](#data-cleaning-and-preparation)
-- [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-- [Principal Component Analysis (PCA)](#principal-component-analysis-pca)
+- [Data Cleaning/Preparation](#data-cleaningpreparation)
+- [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Model Building](#model-building)
-- [Model Evaluation](#model-evaluation)
-- [Balancing the Dataset](#balancing-the-dataset)
-- [Cross-Validation](#cross-validation)
-- [Conclusion](#conclusion)
-
-## Project Overview
-Created a machine learning model to classify music tracks as either Hip-Hop or Rock, achieving an accuracy of 82% using logistic regression. The project involved preprocessing and balancing the dataset, applying PCA for dimensionality reduction, and using decision tree and logistic regression models to classify the tracks, with model performance evaluated using cross-validation.
+- [Results/Findings](#resultsfindings)
+- [Recommendations](#recommendations)
+- [Limitations](#limitations)
+- [References](#references)
 
 ## Data Sources
-- **Echo Nest Data**: Contains various audio features for the tracks.
-- **FMA Dataset**: Metadata for the tracks used for genre classification.
+
+- `fma-rock-vs-hiphop.csv`: Contains detailed information about music tracks.
+- `echonest-metrics.json`: Contains Echo Nest audio features for the tracks.
 
 ## Tools and Libraries
-- **Python Version:** 3.9  
-- **Libraries:** pandas, numpy, sklearn.model_selection (train_test_split, KFold, cross_val_score), sklearn.preprocessing (StandardScaler), matplotlib.pyplot, sklearn.decomposition (PCA), sklearn.linear_model (LogisticRegression), sklearn.metrics (classification_report), sklearn.tree (DecisionTreeClassifier), sklearn.pipeline (Pipeline)  
 
-## Data Cleaning and Preparation
-- **Data Merging**: Merged Echo Nest metrics with track metadata using track IDs.
-- **Missing Values**: Handled missing values appropriately.
-- **Feature Engineering**: Parsed and created new features from the existing data.
+- **Python Version:** 3.9
+- **Libraries:** 
+  - `pandas`
+  - `numpy`
+  - `sklearn`
+  - `matplotlib`
 
-## Exploratory Data Analysis (EDA)
-- **Correlation Matrix**: Identified redundancies in data using a correlation matrix to maintain model efficiency and clarity.
-- **Feature Selection**: Selected relevant features for modeling.
+## Data Cleaning/Preparation
 
-## Principal Component Analysis (PCA)
-- **Variance Explained**: Used scree plots and cumulative explained variance plots to determine the optimal number of components.
-- **Dimensionality Reduction**: Reduced the dataset to 6 principal components explaining 85% of the variance.
+In the initial data preparation phase, the following tasks were performed:
+1. Data loading and inspection.
+2. Handling missing values.
+3. Data cleaning and formatting.
+
+## Exploratory Data Analysis
+
+EDA involved exploring the music data to answer key questions, such as:
+- What are the distributions of different features?
+- Are there any strong correlations between the features?
 
 ## Model Building
-- **Decision Tree**: Built a decision tree classifier to categorize tracks.
-- **Logistic Regression**: Built a logistic regression model for comparison.
 
-## Model Evaluation
-- **Metrics**: Evaluated models using precision, recall, and f1-score.
-- **Results**: Logistic regression performed better than the decision tree, with a higher overall accuracy.
+Included models:
+1. **Decision Tree Classifier**
+2. **Logistic Regression**
 
-## Balancing the Dataset
-- **Balancing**: Balanced the dataset to address model bias towards the "Rock" classification by adjusting class weights.
-- **Impact**: Improved model fairness and classification accuracy.
+Both models were evaluated using cross-validation to determine their performance.
 
-## Cross-Validation
-- **K-Fold Cross-Validation**: Implemented cross-validation to rigorously evaluate model performance.
-- **Comparison**: Logistic regression consistently outperformed the decision tree.
+## Results/Findings
 
-## Conclusion
-The logistic regression model achieved higher accuracy and better overall performance compared to the decision tree model for classifying music genres. This project demonstrates the importance of data preprocessing, dimensionality reduction, and model evaluation techniques in building effective machine learning models.
+The logistic regression model performed better than the decision tree model, achieving an accuracy of 82%, compared to the decision tree's accuracy of 80%.
 
+## Recommendations
+
+Based on the analysis, the following actions are recommended:
+- **Data Augmentation**: Increase the size of the Hip-Hop track dataset to improve model balance and performance.
+- **Feature Engineering**: Explore additional features or different combinations of existing features to enhance model accuracy.
+- **Model Tuning**: Further tune the hyperparameters of the logistic regression model to potentially improve accuracy beyond 82%.
+- **Alternative Models**: Experiment with other classification models like Random Forest or SVM to see if they offer better performance.
+
+## Limitations
+
+The model showed bias toward the Rock classification due to an imbalanced dataset. Balancing the dataset improved model performance.
+
+## References
+
+1. [Million Song Dataset](http://millionsongdataset.com/)
