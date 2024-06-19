@@ -22,7 +22,7 @@ This project aims to analyze the causal effect of a new personalization feature 
 ### Methodology
 1. **Simulating Dataset:**
    - Simulate a dataset including relevant variables: PersonalizedRecommendation, HoursOfContentConsumed, UserEngagementLevel, PreferredContentType, NewFeatureExposure.
-![Variable Table](Pasted Graphic 4.png)
+    ![Variable Table](variable_table.png)
    
 2. **Initializing a Causal Model:**
    - Create a causal graph using the DoWhy library to specify the treatment, outcome, and graph.
@@ -35,6 +35,7 @@ This project aims to analyze the causal effect of a new personalization feature 
 
 5. **Comparing Bias Reduction:**
    - Compare the naive regression estimate and the causal estimate to assess bias reduction.
+   ![Effect of Unobserved Common Cause](Effect_of_Unobserved_Common_Cause.png)
 
 6. **Stress Testing / Sensitivity Analysis:**
    - Conduct sensitivity analysis to check the robustness of the causal effect estimate to unobserved confounders.
