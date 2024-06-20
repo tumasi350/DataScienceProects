@@ -9,7 +9,7 @@
 - [References](#references)
 
 ### Project Overview
-This project aims to analyze the causal effect of a new personalization feature on user engagement in a music app. By using causal inference methods, the goal is to determine whether receiving personalized recommendations increases the hours of content consumed.
+Analyzed the causal effect of a new personalization feature on user engagement in a music app. By using causal inference methods, the goal was to determine whether receiving personalized recommendations increases the hours of content consumed.
 
 ### Tools and Libraries
 - **Python Version:** 3.9
