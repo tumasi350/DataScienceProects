@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-In this project, we performed clustering to segment video streaming platform subscribers based on their numerical data (simulated). This analysis aimed to establish more personalized and targeted campaigns to reduce subscriber churn.
+Performed clustering to segment video streaming platform subscribers based on their numerical data (simulated). This analysis aimed to establish more personalized and targeted campaigns to reduce subscriber churn.
 
 ## Table of Contents
 
